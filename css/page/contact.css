@@ -1,0 +1,324 @@
+.header-img-title{
+    padding-top: 255px;
+    padding-bottom: 320px;
+    opacity: 0;
+}
+.contact-map-wrapper .mk-advanced-gmaps{
+    height: 1152px !important;
+}
+.contact-form-container{
+    padding: 0 5%;
+}
+.contact-us-page nf-field:nth-child(1),.contact-us-page nf-field:nth-child(2),
+.contact-us-page nf-field:nth-child(3),.contact-us-page nf-field:nth-child(4){
+    width: 47%;
+    float: left;
+}
+.contact-us-page nf-field:nth-child(1), .contact-us-page nf-field:nth-child(3){
+    margin-right: 3%;
+
+}
+.contact-us-page nf-field:nth-child(2), .contact-us-page nf-field:nth-child(4){
+    margin-left: 3%;
+
+}
+.contact-us-page nf-field:last-child{
+    width: 100%;
+    text-align: center;
+}
+.nf-after-form-content {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.nf-form-fields-required{
+    display: none;
+}
+.nf-after-field{
+    position: absolute;
+}
+.contact-us-page .ninja-forms-req-symbol,.contact-us-page .nf-error-msg{
+    color: #212121;
+}
+.contact-us-page .ninja-forms-field{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 4px solid #fff !important;
+    color: #212121;
+    font-size: 30px;
+    font-family: lato;
+    font-weight: 300;
+    line-height: 1em;
+}
+.IE .contact-us-page .ninja-forms-field{
+    color: #fff;
+    font-weight: normal;
+}
+.contact-us-page textarea.ninja-forms-field::-webkit-input-placeholder,
+.contact-us-page input[type="text"].ninja-forms-field::-webkit-input-placeholder,
+.contact-us-page input[type="email"].ninja-forms-field::-webkit-input-placeholder {
+  color: white;
+  font-weight: normal;
+}
+
+.IE .contact-us-page input[type="button"], .contact-us-page input[type="button"]{
+    background-color: white !important;
+    color: #3b3b3b;
+    font-size: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 20px 142px;
+    line-height: 1em;
+    border-bottom: none !important;
+    -webkit-box-shadow: -23px 37px 150px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: -23px 37px 150px 0px rgba(0,0,0,0.39);
+    box-shadow: -23px 37px 150px 0px rgba(0,0,0,0.39);
+    transition: all .15s ease-in-out;
+}
+.contact-us-page input[type="button"]:hover{
+    background-color: #3b3b3b !important;
+    color: white;
+}
+.contact-title-1{
+    font-size: 100px !important;
+    
+}
+.contact-title-2{
+    font-size: 86px !important;
+    
+}
+.contact-title-1,.contact-title-2{
+    line-height: 0.9em;
+    margin-bottom: 30px;
+    color: #3b3b3b !important;
+}
+
+.contact-desc p {
+    font-size: 32px !important;
+    line-height: 1em;
+    margin-bottom: 60px;
+    color: #3b3b3b !important;
+}
+
+.contact-address-container{
+    position: absolute;
+    width: 38%;
+    margin-left: -15px;
+    margin-top: 115px;
+}
+.contact-social-icon{
+    display: inline-block;
+    margin-right: 45px;
+}
+.nf-response-msg p{
+    color: white;
+    font-size: 22px;
+}
+
+.vc_icon_element.vc_icon_element-outer .vc_icon_element-inner.vc_icon_element-size-lg .vc_icon_element-icon{
+    font-size: 3.5em !important;
+}
+
+@media (max-width: 1600px){
+    
+    .header-img-title {
+        font-size: 260px !important;
+        left: -60px;
+        padding-top: 190px;
+        padding-bottom: 180px;
+    }
+    .contact-map-wrapper .mk-advanced-gmaps{
+        height: 1152px !important;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-left: 222px !important;
+    }
+}
+@media (max-width: 1440px) {
+    .header-img-title {
+        font-size: 233px !important;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-left: 142px !important;
+    }
+}
+@media (max-width: 1366px) {
+     .header-img-title {
+        font-size: 224px !important;
+        left: -50px;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-left: 113px !important;
+    }
+}
+@media (max-width: 1280px) {
+     .header-img-title {
+        font-size: 205px !important;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-left: 62px !important;
+    }
+}
+@media (max-width: 1024px) {
+     .header-img-title {
+        font-size: 161px !important;
+        left: -30px;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-left: 20px !important;
+    }
+    .contact-map-wrapper{
+        max-height: 900px;
+    }
+}
+@media (max-width: 768px) {
+    .header-img-title {
+        font-size: 118px !important;
+        left: -25px;
+        padding-top: 240px;
+        padding-bottom: 232px;
+    }
+    .contact-us-page nf-field{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-left: 15px !important;
+        padding-top: 50px !important;
+    }
+    .contact-title-1{
+        font-size: 90px !important;
+    }
+    .contact-desc p{
+        font-size: 30px !important;
+
+    }
+    .contact-map-wrapper{
+        max-height: 1000px;
+    }
+    .contact-social-icon{
+        margin-right: 16px;
+    }
+    
+}
+
+@media (max-width: 736px){
+    .banner-container.vc_custom_1494053262754{
+        background-image: url(/wp-content/uploads/2017/03/contact-us-mobile.jpg) !important; 
+        
+    }
+    .header-img-title{
+        font-size: 107px !important;
+        letter-spacing: 1px;
+        white-space: normal;
+        float: left;
+        left: -26px;
+        text-align: left !important;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-top: 50px !important;
+        padding-right: 60px !important;
+        padding-bottom: 55px !important;
+        padding-left: 60px !important;
+    }
+    .contact-desc p{
+        margin-bottom: 40px;
+    }
+    .address-separator.vc_custom_1489569204653{
+        margin-top: 0px !important;
+        margin-bottom: 40px !important;
+    }
+    .contact-map-wrapper .vc_column-inner{
+        padding-left: 0 !important;
+        border: 5px solid #46bcec;
+    }
+    .address-separator.vc_custom_1490091366541{
+        margin-top: 0px !important;
+        margin-bottom: 60px !important;
+    }
+    .follow-title{
+        text-align: center !important;
+    }
+    .social-icon-wrapper .vc_column-inner {
+        max-width: 300px;
+        margin: auto;
+    }
+    .contact-social-icon {
+        margin-right: 26px;
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 480px){
+    .header-img-title{
+        left: -23px;
+        font-size: 95px !important;
+        padding-top: 210px;
+        padding-bottom: 210px;
+    }
+    .contact-address-wrapper .vc_custom_1494641528377{
+        padding-left: 20px !important;
+    }
+    .contact-form-container{
+        padding: 0;
+    }
+    .IE .contact-us-page input[type="button"], .contact-us-page input[type="button"]{
+        padding: 20px 0;
+        max-width: 100%;
+        text-align: center;
+        width: 100% !important;
+    }
+    .contact-form-header{
+        font-size: 58px !important;
+    }
+    
+}
+@media (max-width: 375px){
+    .header-img-title {
+        left: -18px;
+        font-size: 85px !important;
+    }
+    .contact-desc p {
+        font-size: 26px !important;
+    }
+    .contact-title-1 {
+        font-size: 80px !important;
+    }
+    .contact-title-2 {
+        font-size: 82px !important;
+    }
+}
+@media (max-width: 360px){
+    .header-img-title {
+        font-size: 82px !important;
+    }
+    
+}
+@media (max-width: 320px){
+    .header-img-title {
+        left: -15px;
+        font-size: 72px !important;
+    }
+    .banner-container.vc_custom_1494053262754{
+        padding-top: 160px !important;
+        padding-bottom: 136px !important;
+    }
+    .contact-desc p {
+        font-size: 22px !important;
+    }
+    .contact-title-1 {
+        font-size: 68px !important;
+    }
+        .contact-title-2 {
+        font-size: 65px !important;
+    }
+}
+@media (min-width: 2000px) {
+    .header-img-title {
+        text-align: center !important;
+        left: 0px;
+    }
+    .contact-map-wrapper{
+        max-height: 1152px;
+    }
+    
+}
