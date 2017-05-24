@@ -9,10 +9,10 @@ add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' ,15);
 //add style and script
 function enqueue_scripts() {
 
-  wp_enqueue_style( 'component', get_stylesheet_directory_uri().'/css/component.css' );
+  //wp_enqueue_style( 'component', get_stylesheet_directory_uri().'/css/component.css' );
   wp_enqueue_style( 'font-awesome' );
   //wp_enqueue_style( 'bxslider', get_stylesheet_directory_uri().'/css/bxslider.css' );
-  wp_enqueue_style( 'custom', get_stylesheet_directory_uri().'/css/custom.css?ver=1.0.2' ,array( 'parent-style' ));
+  //wp_enqueue_style( 'custom', get_stylesheet_directory_uri().'/css/custom.css?ver=1.0.2' ,array( 'parent-style' ));
 
   //wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri().'/css/bootstrap.min.css' ,array( 'parent-style' ));
   
@@ -48,9 +48,8 @@ function enqueue_scripts1() {
     false,  true );
   wp_enqueue_script( 'sidebarEffects-js', get_stylesheet_directory_uri().'/js/sidebarEffects.js',array('jquery'),
     false,  true );
-  //wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri().'/js/jssor.slider-22.0.15.min.js' ,array('jquery'), false,  true);
-  //wp_enqueue_script( 'bxslider-js', get_stylesheet_directory_uri().'/js/bxslider.js',array('jquery'),  false,  true );
-  wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri().'/js/custom.js?ver=1.1' ,array('jquery'),
+
+  wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri().'/js/custom.js' ,array('jquery'),
     false,  true);
 }
 
@@ -59,8 +58,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_scripts1' ,200);
 
 
 // remove admin bar
-add_filter('show_admin_bar', '__return_false');
-
+//add_filter('show_admin_bar', '__return_false');
 
 function remove_ul ( $menu ){
     return preg_replace( array( '#^<ul[^>]*>#', '#</ul>$#' ), '', $menu );

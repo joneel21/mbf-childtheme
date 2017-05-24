@@ -1,0 +1,149 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-big-dot {
+    width: 33px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-company-icon {
+    width: 16px;
+    height: 19px;
+    background-position: -48px -5px;
+}
+
+.sprite-dot {
+    width: 19px;
+    height: 18px;
+    background-position: -74px -5px;
+}
+
+.sprite-email-icon {
+    width: 20px;
+    height: 15px;
+    background-position: -103px -5px;
+}
+
+.sprite-enterprise-icon {
+    width: 61px;
+    height: 64px;
+    background-position: -133px -5px;
+}
+
+.sprite-find-us-icon {
+    width: 17px;
+    height: 25px;
+    background-position: -204px -5px;
+}
+
+.sprite-footer-1 {
+    width: 75px;
+    height: 75px;
+    background-position: -231px -5px;
+}
+
+.sprite-fotm-icon {
+    width: 23px;
+    height: 18px;
+    background-position: -316px -5px;
+}
+
+.sprite-headerbg {
+    width: 1908px;
+    height: 3px;
+    background-position: -5px -90px;
+}
+
+.sprite-heartbeat-icon {
+    width: 61px;
+    height: 64px;
+    background-position: -349px -5px;
+}
+
+.sprite-latest-post-icon {
+    width: 20px;
+    height: 23px;
+    background-position: -420px -5px;
+}
+
+.sprite-line-corner-2 {
+    width: 137px;
+    height: 171px;
+    background-position: -5px -103px;
+}
+
+.sprite-line-corner-3 {
+    width: 205px;
+    height: 265px;
+    background-position: -152px -103px;
+}
+
+.sprite-line-hr-2a {
+    width: 51px;
+    height: 300px;
+    background-position: -367px -103px;
+}
+
+.sprite-media-process-circle {
+    width: 164px;
+    height: 160px;
+    background-position: -428px -103px;
+}
+
+.sprite-media-testimonial-arrow {
+    width: 209px;
+    height: 128px;
+    background-position: -602px -103px;
+}
+
+.sprite-message-icon {
+    width: 17px;
+    height: 19px;
+    background-position: -450px -5px;
+}
+
+.sprite-phone-icon {
+    width: 14px;
+    height: 22px;
+    background-position: -477px -5px;
+}
+
+.sprite-process-line {
+    width: 29px;
+    height: 15px;
+    background-position: -501px -5px;
+}
+
+.sprite-process-line-left-corner {
+    width: 104px;
+    height: 110px;
+    background-position: -821px -103px;
+}
+
+.sprite-process-line-right-corner {
+    width: 109px;
+    height: 109px;
+    background-position: -935px -103px;
+}
+
+.sprite-submit-icon {
+    width: 20px;
+    height: 19px;
+    background-position: -540px -5px;
+}
+
+.sprite-submit-icon-hover {
+    width: 20px;
+    height: 19px;
+    background-position: -570px -5px;
+}
+
+.sprite-user-icon {
+    width: 16px;
+    height: 17px;
+    background-position: -600px -5px;
+}

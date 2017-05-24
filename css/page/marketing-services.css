@@ -156,7 +156,7 @@
     width: 714px;
 }
 
-.paid-row-container.vc_custom_1492759389661 {
+.paid-row-container.vc_custom_1495518998819 {
     background-position: right !important;
 }
 .paid-ads-title{
@@ -531,6 +531,30 @@
     font-size: 46px;
 }
 
+@media (max-width: 1880px){
+    .marketing-title{
+        font-size: 68px !important;
+    }
+
+    .projects-title{
+        font-size: 360px !important;
+    }
+}
+@media (max-width: 1700px){
+    .paid-ads-title{
+        font-size: 60px !important;
+        line-height: 54px;
+    }
+    .bottom-border.marketing-title.paid-ads-title:after{
+        height: 6px;
+        bottom: -11px;
+        width: 142px;
+    }
+
+    .projects-title{
+        font-size: 330px !important;
+    }
+}
 @media (max-width: 1600px){
     
     .services-header-title{
@@ -564,11 +588,7 @@
     }
     .paid-ads-title{
         font-size: 60px !important;
-    }
-    .bottom-border.marketing-title.paid-ads-title:after{
-        height: 6px;
-        bottom: -11px;
-        width: 142px;
+
     }
     .content-marketing-section.vc_custom_1490322422572{
         margin-top: -2px !important;
@@ -612,6 +632,11 @@
        
         padding: 72px 0;
         top: -33px;
+    }
+}
+@media (max-width: 1550px){
+    .marketing-title-2, .paid-ads-title{
+        font-size: 52px !important;
     }
 }
 @media (max-width: 1440px){
@@ -681,9 +706,9 @@
     .marketing-social-icon .fa {
         font-size: 54px;
     }
-    .paid-ads-title, .marketing-title-2{
-        font-size: 52px !important;
+    .paid-ads-title, .marketing-title-2{        
         line-height: 0.9em;
+        font-size: 50px !important;
     }
     .paid-ads-img img{
         height: auto;
@@ -740,6 +765,10 @@
     .sales-funnel-desktop dt.get-traffic:after{
         top: -18px;
     }
+    .paid-ads-title, .marketing-title-2{        
+        font-size: 45px !important;
+    }
+
     .projects-title {
         font-size: 270px!important;
         margin-bottom: 38px;
@@ -1036,6 +1065,12 @@
     }
 }
 @media (max-width: 960px){
+
+    .projects-title{
+        font-size: 175px!important;
+        margin-bottom: 32px;
+    }
+
     .media-testimonial-container.mk-testimonial.avantgarde-style.mk-testimonial{
         margin-right: 15px !important;
         margin-top: 180px !Important;
@@ -1043,7 +1078,7 @@
     }
     .media-testimonial-container.mk-testimonial.avantgarde-style .mk-testimonial-content{
         padding: 15px !important;
-        margin-top: 105px;
+        margin-top: 115px;
     }
     .media-testimonial-container .mk-testimonial-content{
         margin-left: 15px;
@@ -1113,6 +1148,11 @@
     }
 }
 @media (max-width: 820px){
+
+    .projects-title {
+        font-size: 150px!important;
+        margin-bottom: 38px;
+    }
     .sales-funnel-list dt {
         padding: 50px 0 2px;
         font-size: 16px;
@@ -1132,6 +1172,8 @@
         padding: 47px 0;
         top: -6px;
     }
+
+
 }
 @media (max-width: 768px){
     .services-header-title {
@@ -1195,7 +1237,7 @@
         height: auto;
     }
     .paid-ads-title, .marketing-title-2 {
-        font-size: 29px!important;
+        font-size: 24px!important;
     }
     p {
         font-size: 14px !important;

@@ -1,5 +1,7 @@
 
 jQuery(document).ready(function($){
+	
+	
 	//change header icon
 	$('.googleplus-hover i').removeClass('fa-googleplus').addClass('fa-google-plus');
 	$('.youtube-hover i').removeClass('fa-youtube').addClass('fa-youtube-play');
@@ -7,7 +9,7 @@ jQuery(document).ready(function($){
 	
 	$('#close-menu').click(function(){
 		$('.st-pusher').trigger('click');
-	});
+	});		
 
 	$('input,textarea').focus(function () {
         $(this).data('placeholder', $(this).attr('placeholder'))
@@ -59,8 +61,14 @@ jQuery(document).ready(function($){
 		var gform_val = [];
 		$('#gform_'+gform_id + ' .gform_body input').map(function(){ 
 			gform_val.push({value: $(this).val(), id: $(this).attr('id')}); 
-			if($(this).val() === '' || $(this).val() == null){
-				$(this).attr('style', 'border-color: #0397d2 !important');
+			switch(gform_id){
+				case '8':
+				break;
+				default:
+					if($(this).val() === '' || $(this).val() == null){
+						$(this).attr('style', 'border-color: #0397d2 !important');
+					}
+				break;
 			}
 		});
 		
@@ -102,11 +110,12 @@ jQuery(document).ready(function($){
 		//return false;
 		
 	});
-
+	
 	$('#gform_4').find('.gform_body input').each(function(i){
 		i = i + 10;
 		$(this).attr('tabindex', i);		
 	});
+	$('.screen-reader-shortcut').attr('tabindex', '0');
 	$('#gform_4').find('.gform_body textarea').attr('tabindex', '15');
 	$('#gform_4').find('.gform_button').attr('tabindex', '16');
 });

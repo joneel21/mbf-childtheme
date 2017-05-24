@@ -33,7 +33,8 @@ global $mk_options;
     $search_icon = isset($view_params['search_icon']) ? esc_attr( $view_params['search_icon'] ) : false;
 	
 	$logo = $mk_options['logo'];
-?>
+	$phone = stripslashes($mk_options['header_toolbar_phone']);
+?>	
 
 <?php if(is_header_and_title_show($is_shortcode)) : ?>
 	
@@ -61,7 +62,7 @@ global $mk_options;
         <?php } ?>        
                 	       
                     <div class="main clearfix top-header">                        
-                        <div class="call-us">Call us: <span><?php echo stripslashes($mk_options['header_toolbar_phone']); ?><span></div>
+                        <div class="call-us">Call us: <span><a href="tel:1-<?php echo $phone ?>"><?php echo $phone; ?></a><span></div>
                         <div id="logo">                   
                             <a href="<?php echo home_url('/'); ?>" title="<?php esc_attr( bloginfo('name') ); ?>">
                                 <img class="" title="<?php esc_attr( bloginfo('description') ); ?>" alt="<?php esc_attr( bloginfo('description') ); ?>" src="<?php echo esc_url( $logo ); ?>" />
@@ -88,7 +89,7 @@ global $mk_options;
                     <header <?php echo get_header_json_data($is_shortcode, $header_class['sh_header_style']); ?> <?php echo mk_get_header_class($header_class); ?> <?php echo get_schema_markup('header'); ?>> 
                         <div class="mk-header-holder">
                             <div class="main clearfix top-header">
-                                <div class="call-us">Call us: <span><?php echo stripslashes($mk_options['header_toolbar_phone']); ?><span></div>
+                                <div class="call-us">Call us: <span><a href="tel:1-<?php echo $phone ?>"><?php echo $phone; ?></a><span></div>
                                 <div id="logo">                   
                                     <a href="<?php echo home_url('/'); ?>" title="<?php esc_attr( bloginfo('name') ); ?>">
                                         <img class="" title="<?php esc_attr( bloginfo('description') ); ?>" alt="<?php esc_attr( bloginfo('description') ); ?>" src="<?php echo esc_url( $logo ); ?>" />

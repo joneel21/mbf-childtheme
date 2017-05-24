@@ -127,6 +127,7 @@
 .commercial-container{
     padding: 55px 0 85px;
     margin-top: 15px;
+    min-height: 735px;
 }
 .commercial-container:before{
     background-image: url(/wp-content/uploads/2017/05/video-commercia-camera3.png);
@@ -429,6 +430,7 @@
         margin-bottom: 0px;
         font-size: 144px !important;
         letter-spacing: 16px;
+
     }
     .stat17{
         left: -19px;
@@ -486,6 +488,7 @@
     }
     .commercial-container{
         padding: 55px 0 67px;
+        min-height: 675px;
     }
     .testimonial-vid-contianer.vc_custom_1490350664969{
         min-height: 900px;
@@ -597,7 +600,9 @@
         top: -324px;
         background-size: 92%;
     }
-
+    .commercial-container{
+        min-height: 650px;
+    }
     .media-process-container {
         margin-top: 100px!important;
         margin-bottom: 100px!important;
@@ -767,6 +772,7 @@
     }
     .commercial-container {
         padding: 35px 0 55px;
+        min-height: 625px;
     }
     .commercial-container:before {
         background-size: 84%;
@@ -940,6 +946,9 @@
     .commercial-desc p{
         padding-right: 0;
     }
+    .commercial-container{
+        min-height: 600px;
+    }
     .commercial-container:before {       
         background-size: 59%;
         right: -86px;
@@ -1088,7 +1097,7 @@
 
     .media-testimonial-container.mk-testimonial.avantgarde-style .mk-testimonial-content{
         padding: 15px !important;
-        margin-top: 105px;
+        margin-top: 115px;
     }
     .media-testimonial-container .mk-testimonial-content{
         margin-left: 15px;
@@ -1270,7 +1279,8 @@
         margin-top: 50px;
     }
     .commercial-container:before{
-        top: 46%;        
+        /*top: 46%;*/
+        top: -12%;        
         background-size: 56%;
         right: -39px;
     }
@@ -1412,7 +1422,8 @@
     }    
     .commercial-container:before{
         right: -39px;
-        top: 44.5%;
+        /*top: 44.5%;*/
+        top: -7.5%;
     }
     .commercial-video-container.vc_column_container>.vc_column-inner{
         width: 90%;
@@ -1529,7 +1540,8 @@
         margin-top: 7.7%!important;
     }
     .commercial-container:before {
-        top: 40.5%;
+        /*top: 40.5%;*/
+        top: -14.5%;
         background-size: 49%;
     }
 
@@ -1555,7 +1567,8 @@
         margin-top: 73%;
     }
     .commercial-container:before {
-        top: 38%;
+        /*top: 38%;*/
+        top: -13%;
         background-size: 43%;        
     }
 }
@@ -1613,7 +1626,8 @@
         padding: 20px 0 123%;
     }
     .commercial-container:before {
-        top: 37%;       
+        /*top: 37%; */
+        top: -2%;
     }
 
     .bottom-border.bottom-border2.media-title.media-process:after{
@@ -1681,7 +1695,8 @@
         margin-top: 111%;
     }
     .commercial-container:before {
-        top: 39%;
+        /*top: 39%;*/
+        top: 2%;
         background-size: 39%;
     }
     .media-title.infographic-title, .media-title {
@@ -1735,7 +1750,8 @@
         font-size: 18px!important;
     }
     .commercial-container:before {
-        top: 35%;
+        /*top: 35%;*/
+        top: -8%;
         background-size: 37%;
     }
 }
@@ -1773,7 +1789,8 @@
         font-size: 20px !important;     
     }
     .commercial-container:before {
-        top: 27.5%;
+        /*top: 27.5%;*/
+        top: -21.5%;
         background-size: 33%;
     }
     .media-title.media-process {
