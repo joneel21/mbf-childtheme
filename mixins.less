@@ -8,6 +8,11 @@
 	-moz-box-shadow:    @string;
 	box-shadow:         @string;
 }
+.duo-box-shadow(@string: -13px -18px 58px rgba(0, 0, 0, 0.4), @string: 0 14px 40px rgba(0, 0, 0, 0.23)){
+	-webkit-box-shadow: @arguments;
+	-moz-box-shadow:    @arguments;
+	box-shadow:         @arguments;
+}
 .drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
 	-webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
 	-moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
@@ -82,53 +87,62 @@
 	-webkit-animation: @arguments;
 	-moz-animation:    @arguments;
 	-ms-animation:     @arguments;
+	animation:     	   @arguments;
 }
 .animation(@animation){
 	-webkit-animation: @animation;
 	-moz-animation:    @animation;
 	-ms-animation:     @animation;
+	animation: 		   @animation;
 }
 .transition (@transition) {
 	-webkit-transition: @transition;  
 	-moz-transition:    @transition;
 	-ms-transition:     @transition; 
-	-o-transition:      @transition;  
+	-o-transition:      @transition; 
+	transition: 		@transition; 
 }
 .transform(@string){
 	-webkit-transform: @string;
 	-moz-transform: 	 @string;
 	-ms-transform: 		 @string;
 	-o-transform: 		 @string;
+	transform: 			@string;
 }
 .scale (@factor) {
 	-webkit-transform: scale(@factor);
 	-moz-transform: 	 scale(@factor);
 	-ms-transform: 		 scale(@factor);
 	-o-transform: 		 scale(@factor);
+	transform: 		 	 scale(@factor);
 }
 .rotate (@deg) {
 	-webkit-transform: rotate(@deg);
 	-moz-transform: 	 rotate(@deg);
 	-ms-transform: 		 rotate(@deg);
 	-o-transform: 		 rotate(@deg);
+	transform: 		 	rotate(@deg);
 }
 .skew (@deg, @deg2) {
 	-webkit-transform:       skew(@deg, @deg2);
 	-moz-transform: 	 skew(@deg, @deg2);
 	-ms-transform: 		 skew(@deg, @deg2);
 	-o-transform: 		 skew(@deg, @deg2);
+	transform: 		 	skew(@deg, @deg2);
 }
 .translate (@x, @y:0) {
 	-webkit-transform:       translate(@x, @y);
 	-moz-transform: 	 translate(@x, @y);
 	-ms-transform: 		 translate(@x, @y);
 	-o-transform: 		 translate(@x, @y);
+	transform: 			translate(@x, @y);
 }
 .translate3d (@x, @y: 0, @z: 0) {
 	-webkit-transform:       translate3d(@x, @y, @z);
 	-moz-transform: 	 translate3d(@x, @y, @z);
 	-ms-transform: 		 translate3d(@x, @y, @z);
 	-o-transform: 		 translate3d(@x, @y, @z);
+	transform: 			translate3d(@x, @y, @z);
 }
 .perspective (@value: 1000) {
 	-webkit-perspective: 	@value;
@@ -141,4 +155,5 @@
 	-moz-transform-origin:    @x @y;
 	-ms-transform-origin:     @x @y;
 	-o-transform-origin:      @x @y;
+	transform-origin: @x @y;
 }

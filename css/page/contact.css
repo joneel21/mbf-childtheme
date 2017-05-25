@@ -16,9 +16,9 @@
     background-color: transparent !important;
     border: none !important;
     border-bottom: 4px solid #fff !important;
-    color: #212121 !important;
+    color: white !important;
     font-size: 30px !important;    
-    font-weight: 300;
+    font-weight: normal;
     line-height: 1em;
     margin-top: 10px;
 }
@@ -128,6 +128,9 @@
 .vc_icon_element.vc_icon_element-outer .vc_icon_element-inner.vc_icon_element-size-lg .vc_icon_element-icon{
     font-size: 3.5em !important;
 }
+.vc_icon_element-inner:hover > .vc_icon_element-icon{
+    color: #0397d2 !important;
+}
 
 @media (max-width: 1850px) {
     .header-img-title{
@@ -189,16 +192,14 @@
         padding-left: 142px !important;
     }
 }
-
 @media (max-width: 1400px) {
     .header-img-title{
-        font-size: 285px !important;
+        font-size: 226px !important;
     }
 }
-
 @media (max-width: 1366px) {
      .header-img-title {
-        font-size: 224px !important;
+        font-size: 220px !important;
         left: -50px;
     }
     .contact-address-wrapper .vc_custom_1494641528377{

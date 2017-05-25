@@ -17,7 +17,7 @@ function enqueue_scripts() {
   //wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri().'/css/bootstrap.min.css' ,array( 'parent-style' ));
   
   if(is_front_page() || is_page(27) ){
-  	wp_enqueue_style( 'css-home', get_stylesheet_directory_uri().'/css/page/home.css' );
+  	wp_enqueue_style( 'css-home', get_stylesheet_directory_uri().'/home.css' );
   }
   if( is_page('contact-us') || is_page(37)){
   	 wp_enqueue_style( 'css-contact', get_stylesheet_directory_uri().'/css/page/contact.css' );
@@ -107,29 +107,3 @@ function custom_projects() {
 }
 add_action( 'init', 'custom_projects' );
 
-
-function load_projects_shortcode( $atts ) {
-  $post__not_in = "";
-  $return_post = "";
-  $args = array(
-    'post_type'   => 'project',
-    'post_status' => 'publish',
-    'posts_per_page' => 6,
-    'order' => 'ASC'
-  );
-  $the_query = new WP_Query( $args );
-  if( $the_query->have_posts() ):
-    while( $the_query->have_posts() ) : $the_query->the_post();
-      $return_post .= '<div class="porject_post">';
-      //$return_post .= the_post_thumbnail('large');
-      $return_post .= '<img src="'.get_the_post_thumbnail_url(get_the_ID(),'large').'" class="img-responsive">';
-      $return_post .= '</div>';
-      $post__not_in .= get_the_ID().',';
-    endwhile;
-  endif;
-  $post__not_in =  rtrim($post__not_in,",");
-        
-  $return_post .= do_shortcode('[ajax_load_more container_type="div" post__not_in="'.$post__not_in.'" pause="true" post_type="project" posts_per_page="2"  button_label="LOAD MORE PROJECTS" scroll="false"]');
-  return $return_post;
-}
-add_shortcode( 'load_projects', 'load_projects_shortcode');

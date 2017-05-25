@@ -253,72 +253,6 @@
     display: none;
 }
 
-/*media dl list*/
-
-.media-process-list {
-    counter-reset: media-list-counter;
-    font-family: "Josefin Sans";
-    font-weight: 700;
-}
-.media-process-list dt{
-    position: relative;
-    padding: 55px 0 55px 0;
-    font-size: 70px;
-    line-height: 1em;
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    background: #0397d2;
-    color: white;
-    text-align: center;
-}
-.media-process-list dt:nth-child(odd){
-    margin-left: 390px;
-    padding-left: 200px;
-    
-}
-.media-process-list dt:nth-child(odd){
-    margin-left: 390px;
-    padding-left: 200px;
-    
-}
-.media-process-list dt:before {
-    content: counter(media-list-counter);
-    counter-increment: media-list-counter;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0;
-    font-size: 100px;
-    /*float:left;*/
-    /*line-height: 1.7em;*/
-    width: 202px;
-    background: #333;
-    padding: 56px 82px;
-    padding: 55px 80px;
-    background-image: url(/wp-content/uploads/2017/02/media-process-circle.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.media-process-list dt:nth-child(even):before{
-    /*float:right !important;*/
-    left: initial;
-}
-.media-process-list dt:nth-child(even){
-    padding-right: 200px;
-    margin-right: 390px;
-}
-.media-process-list dt.storyboard{
-    margin-right: 292px;
-}
-.media-process-list dt.animation{
-    margin-left: 237px;
-}
-.media-process-list dt{
-    -webkit-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.34);
-    -moz-box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.34);
-     box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.34);
-}
-
 .media-testimonial-container.mk-testimonial.avantgarde-style.mk-testimonial{
     padding:0px;
     margin: 0px !important;    
@@ -1827,3 +1761,4 @@
         margin-top: 35px;
     }
 }
+
