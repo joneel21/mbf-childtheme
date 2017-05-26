@@ -2941,6 +2941,9 @@ button.alm-load-more-btn.more.loadmorebtn {
     width: 980px;
 
  }*/
+  .admin-bar .sticky-style-fixed.header-style-3.a-sticky.toolbar-false .mk-header-holder {
+    margin-top: 32px;
+  }
   #gform_wrapper_3 {
     position: relative;
     top: -45px;
@@ -3007,6 +3010,7 @@ button.alm-load-more-btn.more.loadmorebtn {
   }
   .admin-bar .sticky-style-fixed.header-style-3.a-sticky.toolbar-false .mk-header-holder {
     margin-top: 32px;
+    top: 0;
   }
   .admin-bar .vertical-st-menu {
     margin-top: 119px;
@@ -3080,7 +3084,7 @@ button.alm-load-more-btn.more.loadmorebtn {
     display: none !important;
   }
   .nav .socials {
-    margin-right: 20px !important;
+    margin-right: 10px !important;
   }
   .nav {
     padding-left: 0px !important;
