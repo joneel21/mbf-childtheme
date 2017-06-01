@@ -1069,6 +1069,9 @@ body,
 .visible-tablet {
   display: none !important;
 }
+.hide-mobile {
+  display: block !important;
+}
 .hide,
 .amp-viewer-header .amp-viewer-icon-close {
   display: none;
@@ -2690,7 +2693,7 @@ button.alm-load-more-btn.more.loadmorebtn {
     padding: 30px 25px;
   }
   .tp-bullets {
-    display: none;
+    /*display: none;*/
   }
   .main {
     height: 112px;
@@ -3080,7 +3083,7 @@ button.alm-load-more-btn.more.loadmorebtn {
   .visible-tablet {
     display: block !important;
   }
-  .hide-table {
+  .hide-tablet {
     display: none !important;
   }
   .nav .socials {

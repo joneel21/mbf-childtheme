@@ -458,34 +458,33 @@
     #our-process_wrapper .tp-bullets {
         display: block;
     }
+	 #process-title, #evaluate-title, #evaluate-desc, #promote-title, #promote-desc,
+    #analyze-title, #analyze-desc, #manage-title, #manage-desc,
+	.m-process-desc, .m-process-title{
+        left: 20px !important;
+    }  
     .master-holder .our-stats-slider .mk-text-block h2{
         top: 20px;
         margin-top: 80px;
         left: -15px;
     }
 }
-
-@media (max-width: 496px){	
-	#our-process {
-	    height: 590px !important;
+@media only screen and (max-device-width: 767px) and (orientation:landscape) {
+	#process-mobile-row{
+		min-height: 400px;
 	}
+	#our-process-mobile{
+		height: 430px !important;
+		max-height: 500px !important;
+	}	
 	
-	#build-desc, #convert-desc, #optimize-desc {
-	    left: 26px !important;
-	}
-	#slide-60-layer-7 img, #slide-65-layer-11 img, #slide-63-layer-9 img{
-		top: 0px !important;
-	}
-}
-
-@media only screen and (max-device-width: 736px) and (orientation:landscape) {
-    #process-title, #evaluate-title, #evaluate-desc, #promote-title, #promote-desc,
-    #analyze-title, #analyze-desc, #manage-title, #manage-desc{
-        left: 20px !important;
-    }
-    #build-desc{
-        left: 110px !important;
-    }
+	#evaluate-desc .tp-caption, #promote-desc .tp-caption, .m-process-desc .tp-caption, 
+     #optimize-desc .tp-caption p, #analyze-desc .tp-caption, 
+     #convert-desc .tp-caption p, #manage-desc .tp-caption {
+       line-height: 25px!important;
+       font-size: 16px !important;
+     }
+     
     #convert-desc, #optimize-desc{
         left: 160px !important;
     }
@@ -501,39 +500,18 @@
     }
     
 }
-@media only screen and (max-device-width: 640px) and (orientation:landscape) {
-     #evaluate-desc .tp-caption, #promote-desc .tp-caption, #build-desc .tp-caption p, 
-     #optimize-desc .tp-caption p, #analyze-desc .tp-caption, 
-     #convert-desc .tp-caption p, #manage-desc .tp-caption {
-       line-height: 25px!important;
-       font-size: 16px !important;
-     }
-}
-@media only screen and (max-device-width: 568px) and (orientation:landscape) {
-    #our-process_wrapper .tp-bullets.hesperiden {
-        transform: matrix(1, 0, 0, 1, -78, -27) !important;
-    }
-    #build-title, #build-desc {
-        left: 81px !important;
-    }
-    #convert-title, #convert-desc, #optimize-desc, #optimize-title {
-        left: 92px !important;
-    }
-    #evaluate-mobile-img, .pro-mobile-r-img{
-        left: 400px !important;
-    }
-    .hide-landscape-i5{
-        display: none !important;
-    }
+@media (max-width: 496px){	
+	
+	#build-desc, #convert-desc, #optimize-desc {
+	    left: 26px !important;
+	}	
 }
 @media (max-width: 480px){
      .video-blog-post.vc_custom_1492421561255{
         background-image: url(/wp-content/uploads/2017/03/home-our-stats-mobile.jpg) !important;
     }
-    #our-process_wrapper .hesperiden.tp-bullets{
-	    transform: matrix(1, 0, 0, 1, -78, -30) !important;
-	 }
-	 .blue-fox-boxs .blue-box .vc_column-inner {      
+   
+	.blue-fox-boxs .blue-box .vc_column-inner {      
 
        padding: 55px 60px 79px !important;
 
@@ -559,10 +537,7 @@
     #rev_slider_15_3_wrapper .tp-revslider-slidesli .h-testimony-title .tp-caption{
         font-size: 36px !important;
        
-    }
-    #our-process_wrapper .hesperiden.tp-bullets {
-       transform: matrix(1, 0, 0, 1, -78, -15) !important;
-    }
+    }    
 }
 @media (max-width: 360px){    
     .blue-fox-boxs .blue-box h1 {
@@ -570,16 +545,21 @@
     }
     .service-blog .mk-text-block h3 {
         font-size: 40px;
-    }
-    #our-process_wrapper .hesperiden.tp-bullets {
-	    transform: matrix(1, 0, 0, 1, -78, -20) !important;
-	}
+    }    
 }
 @media (max-width: 320px){
     h2.formtitle {
         font-size: 28px !important;
         margin-top: 0px;
     }
+
+	#evaluate-desc .tp-caption, #promote-desc .tp-caption, #build-desc .tp-caption p, 
+    #optimize-desc .tp-caption p, #analyze-desc .tp-caption, 
+    #convert-desc .tp-caption p, #manage-desc .tp-caption {
+       line-height: 25px!important;
+       font-size: 16px !important;
+     }	
+
      .blue-fox-boxs .blue-box {
 
      margin: 100px auto 0;
@@ -591,10 +571,7 @@
    	margin-top: -125px !important;
 
    }
-
-    #our-process_wrapper .tp-bullets.hesperiden {
-        transform: matrix(1, 0, 0, 1, -78, -48) !important;
-    }
+   
     #rev_slider_15_3_wrapper .tp-revslider-slidesli .h-testimony-title,
     #rev_slider_15_3_wrapper .tp-revslider-slidesli .h-testimony-line, 
     #rev_slider_15_3_wrapper .tp-revslider-slidesli .h-testimony-desc{
