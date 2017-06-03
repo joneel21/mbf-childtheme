@@ -2947,6 +2947,12 @@ button.alm-load-more-btn.more.loadmorebtn {
   .admin-bar .sticky-style-fixed.header-style-3.a-sticky.toolbar-false .mk-header-holder {
     margin-top: 32px;
   }
+  .nav {
+    padding: 0;
+  }
+  .nav .socials {
+    margin-right: 5px;
+  }
   #gform_wrapper_3 {
     position: relative;
     top: -45px;
@@ -3086,7 +3092,8 @@ button.alm-load-more-btn.more.loadmorebtn {
   .hide-tablet {
     display: none !important;
   }
-  .nav .socials {
+  .nav .socials,
+  .menu-bar {
     margin-right: 10px !important;
   }
   .nav {
