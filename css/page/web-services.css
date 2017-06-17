@@ -50,12 +50,12 @@
     margin-top: -120px;
 }
 .media-title{
-    font-size: 80px !important;
+    font-size: 80px;
     line-height: 1em;
     position: relative;
 }
 .media-title.sevices-title{
-    font-size: 120px !important;
+    font-size: 120px;
     text-transform: none;
 }
 .media-title.media-process{
@@ -282,7 +282,9 @@
 .reset{
     color: initial !important;
 }
-
+.mk-testimonial.avantgarde-style .mk-testimonial-author{
+	display: none;
+}
 .media-testimonial-container.mk-testimonial.avantgarde-style.mk-testimonial{
     padding:0px;
     margin: 0px !important;    
@@ -353,8 +355,8 @@
 
 .media-testimonial-container.mk-testimonial.avantgarde-style .mk-testimonial-image img{
     position: absolute;
-    right: 0 !important;
-    top: 10%!important;
+    right: 0;
+    top: 2%;
     height: auto !important;
     width: 259px !important;
     border-radius: 0;
@@ -379,7 +381,7 @@
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     right: 2%!important;
-    top: 86% !important;
+    top: 90%;
 }
 
 .projects-masonry-container .vc_grid.vc_row.vc_grid-gutter-30px .vc_grid-item{
@@ -557,7 +559,7 @@
         font-size: 200px !important;
     }    
     .media-title.sevices-title {
-        font-size: 110px !important;
+        font-size: 110px;
     }
     .bottom-border.media-title::after{
         width: 165px;
@@ -673,7 +675,7 @@
         margin-bottom: 17px;
     }       
     .media-title.sevices-title {
-        font-size: 90px !important;
+        font-size: 90px;
     }
     .bottom-border.media-title::after {
         bottom: -6px;
@@ -769,7 +771,7 @@
         left: 11%;
     }
     .media-title.sevices-title {
-        font-size: 80px!important;
+        font-size: 80px;
     }
     .bottom-border.media-title::after {
         width: 114px;
@@ -977,7 +979,7 @@
         font-size: 150px!important;
     }
     .media-title.sevices-title {
-        font-size: 70px!important;
+        font-size: 70px;
     }  
     .bottom-border.media-title::after {
         width: 93px;  
@@ -1095,7 +1097,7 @@
         font-size: 150px!important;
     }
     .media-title.sevices-title {
-        font-size: 58px!important;
+        font-size: 58px;
     }
     .marketing-desc {
         padding-left: 0;  
@@ -1310,7 +1312,7 @@
         background-position: left 155px center;
     }
     .media-title.sevices-title {
-        font-size: 50px!important;
+        font-size: 50px;
     }
     .head-numbers {
         font-size: 115px!important;

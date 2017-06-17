@@ -253,6 +253,9 @@
     display: none;
 }
 
+.mk-testimonial.avantgarde-style .mk-testimonial-author{
+	display: none;
+}
 .media-testimonial-container.mk-testimonial.avantgarde-style.mk-testimonial{
     padding:0px;
     margin: 0px !important;    
@@ -321,8 +324,8 @@
 }
 .media-testimonial-container.mk-testimonial.avantgarde-style .mk-testimonial-image img{
     position: absolute;
-    right: 0 !important;
-    top: 10%!important;
+    right: 0;
+    top: 2%;
     height: auto !important;
     width: 259px !important;
     border-radius: 0;
@@ -347,7 +350,7 @@
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     right: 2%!important;
-    top: 86% !important;
+    top: 90%;
 }
 
 @media (max-width: 1800px){

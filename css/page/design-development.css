@@ -51,9 +51,12 @@
 .info-graphics-container .vc_col-sm-5, .print-container .vc_col-sm-5{
     float: right;
 }
-.web-design-container.vc_custom_1493090100215, .mobile-app-container.vc_custom_1493090124090{
+.web-design-container.vc_custom_1493090100215{
     background-position: left bottom !important;
     background-position: left bottom -140px!important;
+}
+.mobile-app-container.vc_custom_1493090124090{    
+    background-position: left top !important;
 }
 .web-design-desc-container{
     margin-top: 399px;
@@ -174,6 +177,10 @@
     padding: 5% 5% 0;
 }
 
+.mk-testimonial.avantgarde-style .mk-testimonial-author{
+	display: none;
+}
+
 .media-testimonial-container.mk-testimonial.avantgarde-style.mk-testimonial{
     padding:0px;
     margin: 0px !important;   
@@ -242,8 +249,8 @@
 }
 .media-testimonial-container.mk-testimonial.avantgarde-style .mk-testimonial-image img{
     position: absolute;
-    right: 0 !important;
-    top: 10%!important;
+    right: 0;
+    top: 2%;
     height: auto !important;
     width: 259px !important;
     border-radius: 0;
@@ -268,7 +275,7 @@
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     right: 2%!important;
-    top: 86% !important;
+    top: 90%;
 }
 
 .projects-masonry-container .vc_grid.vc_row.vc_grid-gutter-30px .vc_grid-item{
@@ -431,7 +438,7 @@
 	.services-header-sub-title{
 		font-size: 156px !important;
 	}
-    .web-design-container.vc_custom_1493090100215, .mobile-app-container.vc_custom_1493090124090{
+    .web-design-container.vc_custom_1493090100215{
         background-position: left bottom -35px!important;
     }
     .web-design-desc-container{
@@ -493,7 +500,7 @@
 		line-height: 0.7em !important;
 		margin-bottom: 22px;
 	}
-    .web-design-container.vc_custom_1493090100215, .mobile-app-container.vc_custom_1493090124090{
+    .web-design-container.vc_custom_1493090100215{
         background-position: left bottom -65px!important;
     }
     .media-services.vc_custom_1488602061296 {
@@ -602,7 +609,7 @@
         font-size: 270px!important;
         margin-bottom: 38px;
     }
-    .web-design-container.vc_custom_1493090100215, .mobile-app-container.vc_custom_1493090124090{
+    .web-design-container.vc_custom_1493090100215{
         background-position: left bottom 0px!important;
     }
 }

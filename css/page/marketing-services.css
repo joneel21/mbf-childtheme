@@ -360,6 +360,10 @@
     position: absolute;
     z-index: -1;
 }
+
+.mk-testimonial.avantgarde-style .mk-testimonial-author{
+	display: none;
+}
 .media-testimonial-container.mk-testimonial.avantgarde-style.mk-testimonial{
     padding:0px;
     margin: 0px !important;    
@@ -430,8 +434,8 @@
 
 .media-testimonial-container.mk-testimonial.avantgarde-style .mk-testimonial-image img{
     position: absolute;
-    right: 0 !important;
-    top: 10%!important;
+    right: 0;
+    top: 2%;
     height: auto !important;
     width: 259px !important;
     border-radius: 0;
@@ -456,7 +460,7 @@
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     right: 2%!important;
-    top: 86% !important;
+    top: 90%;
 }
 
 .projects-masonry-container .vc_grid.vc_row.vc_grid-gutter-30px .vc_grid-item{
@@ -1332,7 +1336,7 @@
         line-height: 1em !important;   
     }
     .media-services.vc_custom_1489040877890{
-        margin-bottom: 120px;
+        margin-bottom: 50px;
     }
      p {
         font-size: 16px !important;

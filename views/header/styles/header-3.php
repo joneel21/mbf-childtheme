@@ -34,6 +34,8 @@ global $mk_options;
 	
 	$logo = $mk_options['logo'];
 	$phone = stripslashes($mk_options['header_toolbar_phone']);
+
+	$st_menu_meta = get_post_meta($post->ID, 'meta_custom_st_menu', true);
 ?>	
 
 <?php if(is_header_and_title_show($is_shortcode)) : ?>
@@ -46,7 +48,7 @@ global $mk_options;
                 <li id="close-menu" class="close-st-menu"><i class="fa fa-times-circle-o" aria-hidden="true"></i></i></li>
             </ul>
         </div>
-        <?php if(is_page()) {?> 
+        <?php if( is_page() && ($st_menu_meta == "no" || $st_menu_meta == NULL) ) {?> 
         <div class="st-pusher-wrapper">
         
         <div class="st-pusher st-pusher-header">
@@ -116,7 +118,7 @@ global $mk_options;
                             <li id="close-vertical-menu" class="close-st-menu"><i class="fa fa-times-circle-o" aria-hidden="true"></i></i></li>           
                         </ul>
                     </nav>
-        <?php if(is_page()) {?>        
+        <?php if( is_page() && ($st_menu_meta == "no" || $st_menu_meta == NULL) ) {?>         
 				</div>
             </div>	
         </div>

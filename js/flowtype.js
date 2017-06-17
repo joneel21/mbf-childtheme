@@ -16,28 +16,37 @@
 // Establish default settings/variables
 // ====================================
       var settings = $.extend({
-         //maximum   : 9999,
-         //minimum   : 1,
+         maximum   : 9999,
+         minimum   : 1,
          maxFont   : 9999,
          minFont   : 1,
-         //fontRatio : 35
+         fontRatio : 5
       }, options),
 
 // Do the magic math
 // =================
 
-      changes = function(el) {
-         var $el = $(el),
-            elw = $el.width(),
-			width = elw / settings.maxFont,
-			fontBase = settings.maxFont - width,
-			fontSize = 	fontBase > settings.maxFont ? settings.maxFont : fontBase;
-			console.log(elw);
-            console.log(width);
-            console.log(fontBase);
-         $el.css('font-size', fontSize + 'px');
+//custom compression formula 
+//compression = max width - current width / 5;
 
-         
+//old formula
+//getSize = $el.css('font-size'),
+//fontRatio = elw / parseInt(elw.toString().substring(0, 3)),
+//fontBase = parseInt(getSize.substring(0, 3)) - fontRatio,
+
+      changes = function(el) {
+         var $el = $(el),    
+                  elw = window.innerWidth,
+			width = settings.maximum,
+                  compressRatio = (width - elw) / settings.fontRatio,
+                  fontBase = settings.maxFont - Math.round(compressRatio),                  
+                  fontSize = 	fontBase > settings.maxFont ? settings.maxFont : fontBase < settings.minFont ? settings.minFont : fontBase;                     
+         $el.css('font-size', fontSize + 'px');
+ 
+      },
+
+      isInteger = function(x) {
+            return x % 1 === 0;
       };
 
 // Make the magic visible
