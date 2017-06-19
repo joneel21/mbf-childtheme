@@ -27,6 +27,24 @@ jQuery(document).ready(function($){
 			minFont: 84,
 			fontRatio: 12
 	});
+	$('.media-title.infographic-title').flowtype({
+			maximum: 1500,
+			maxFont: 90,
+			minFont: 60,
+			fontRatio: 10
+	});
+	$('.media-title.resp-media-title').flowtype({
+			maximum: 1500,
+			maxFont: 80,
+			minFont: 50,
+			fontRatio: 10
+	});
+	$('.media-title.media-process').flowtype({
+			maximum: 1650,
+			maxFont: 76,
+			minFont: 40,
+			fontRatio: 20
+	});
 
 	//marketing services
 	$('.services-header-title.marketing').flowtype({
@@ -34,6 +52,20 @@ jQuery(document).ready(function($){
 			maxFont: 209,
 			minFont: 60,
 			fontRatio: 8.8
+	});
+
+	//design and dev
+	$('.services-header-title.design-develop').flowtype({
+			maximum: 1650,
+			maxFont: 209,
+			minFont: 97,
+			fontRatio: 6
+	});
+	$('.services-header-sub-title.design-develop').flowtype({
+			maximum: 1650,
+			maxFont: 172,
+			minFont: 72,
+			fontRatio: 6.5
 	});
 
 	//projects

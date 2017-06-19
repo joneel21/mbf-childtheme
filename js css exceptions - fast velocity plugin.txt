@@ -1,0 +1,9 @@
+/wp-includes/js/jquery/jquery.js
+/wp-content/themes/jupiter/assets/js/min/core-scripts.js
+/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js
+/wp-content/plugins/js_composer_theme/assets/js/dist/js_composer_front.min.js
+/wp-content/themes/jupiter/assets/js/plugins/wp-enqueue/min/smoothscroll.js
+/wp-includes/js/jquery/jquery-migrate.min.js
+/wp-content/plugins/js_composer_theme/assets/lib/waypoints/waypoints.min.js
+/wp-content/plugins/js_composer_theme/assets/css/js_composer.min.css
+/wp-content/plugins/js_composer_theme/assets/lib/bower/animate-css/animate.min.css

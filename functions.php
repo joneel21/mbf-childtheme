@@ -1,10 +1,5 @@
 <?php
 
-function enqueue_parent_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri().'/style.css?ver=1.0' );
-}
-add_action( 'wp_enqueue_scripts', 'enqueue_parent_styles' ,15);
-
 //add style and script
 function enqueue_scripts_page() {  
   wp_enqueue_style( 'font-awesome' );   
@@ -28,7 +23,7 @@ function enqueue_scripts_page() {
     false,  true);
   }
   if( is_page('web-services/design-development') || is_page(724)){
-  	 wp_enqueue_style( 'css-design-development', get_stylesheet_directory_uri().'/css/page/design-development.css' );
+  	 wp_enqueue_style( 'css-design-development', get_stylesheet_directory_uri().'/css/page/design-development.min.css' );
 	 
 	  wp_enqueue_script( 'services-js', get_stylesheet_directory_uri().'/js/services.min.js' ,array('jquery'),
     false,  true);
@@ -56,7 +51,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_scripts_page',200 );
 
 function enqueue_scripts_js() {
 
-  wp_enqueue_script( 'flowtype-js', get_stylesheet_directory_uri().'/js/flowtype.js',array('jquery'), false,  true );
+  wp_enqueue_script( 'flowtype-js', get_stylesheet_directory_uri().'/js/flowtype.min.js',array('jquery'), false,  true );
   
   wp_enqueue_script( 'classie-js', get_stylesheet_directory_uri().'/js/classie.min.js',array('jquery'),
     false,  true );
@@ -72,7 +67,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_scripts_js' ,200);
 
 function add_async_attribute($tag, $handle) {
    // add script handles to the array below
-   $scripts_to_async = array('custom-js', 'sidebarEffects-js', 'classie-js', 'services-js');
+   $scripts_to_async = array('custom-js', 'sidebarEffects-js', 'classie-js', 'services-js', 'flowtype-js');
    
    foreach($scripts_to_async as $async_script) {
       if ($async_script === $handle) {
@@ -185,4 +180,94 @@ function meta_box_st_menu_save( $post_id )
 		update_post_meta( $post_id, 'meta_custom_st_menu', "no" );
 	}
 
+}
+
+//customize amp page
+
+add_action( 'amp_post_template_css', 'bfx_amp_additional_css_styles' );
+
+function bfx_amp_additional_css_styles( $amp_template ) {
+	// only CSS here please...
+	?>
+	header.amp-wp-header {
+		padding: 5px 0;
+        background: #fff;
+        border-bottom: 2px solid #0397d2;
+	}
+	header.amp-wp-header a {
+		background-image: url( '/wp-content/uploads/2017/01/blue-logo.png' );
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: block;
+		height: 27px;
+		width: 94px;
+		margin: 0 auto;
+		text-indent: -9999px;
+	}
+    .amp-wp-footer, .amp-nav-footer{
+    	background-color: #3d4045;
+        text-align: center;
+    }
+    .amp-wp-footer p, .amp-wp-footer a{
+    	display:none;
+    }
+    .footer-nav{    	
+    	margin: 0 auto;
+        max-width: calc(840px - 32px);
+        padding: 1px 16px 1.25em;
+        position: relative;
+    }
+    .amp-wp-footer div{
+    	padding: 1.25em 16px 1px;
+    }
+    .amp-wp-footer h2, .footer-nav h4{
+    	color: #0096cf;
+    }
+    ul.footer-links a {
+        text-decoration: none;
+        color: white;
+    }
+    .footer-links {
+        margin: 0;
+    }
+    ul.footer-links li {
+        display: inline;
+        font-size: 13px;
+        list-style: none;
+        padding: 0 5px;
+	}
+    .footer-links a:hover{
+    	color: #0096cf;
+    }
+    .credit{
+    	font-size: 11px;
+    	letter-spacing: 1px;
+        color: #8c8e91;
+    }
+	<?php
+}
+
+add_action( 'amp_post_template_footer', 'bfx_amp_add_footer_links' );
+
+function bfx_amp_add_footer_links( $amp_template ) {
+	$post_id = $amp_template->get( 'post_id' );
+	?>
+    <footer class="amp-nav-footer">
+        <div class="footer-nav">        
+            <ul class="footer-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/web-services">Web Services</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact-us">Contact</a></li>
+            </ul>
+            <p class="credit">Copyright All Rights Reserved © 2017</p>
+        </div>
+    <footer>
+	<?php
+}
+
+add_action( 'amp_init', 'bfx_amp_add_project_cpt' );
+function bfx_amp_add_project_cpt() {
+	add_post_type_support( 'project', AMP_QUERY_VAR );
 }
